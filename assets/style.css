@@ -8,6 +8,7 @@
     --lighter: #e5e5e5;
     --primary: #1b72e8;
     --secondary: #12293f;
+    --btn-color:#165bba;
 }
 
 .wrapper {
@@ -25,12 +26,12 @@
 
 
 .row {
-    height: calc((100vh - 100px));
+    height: calc(100vh - 200px)
 }
 
 nav {
-    height: 100px;
     background-color: var(--primary);
+    height: 100px;
 }
 
 .col-12 {
@@ -75,6 +76,7 @@ ul {
 
 .item_1 {
     display: none;
+    
 }
 
 @media screen and (max-width:768px) {
@@ -83,7 +85,7 @@ ul {
     }
 
     .item_1 {
-        display: block;
+        display: inline-block;
     }
 }
 
@@ -92,4 +94,14 @@ ul {
     padding: 10px;
     border: 1px solid white;
     border-radius: 5px;
+}
+
+.bt{
+    background-color: var(--btn-color);
+    padding: 2px 6px;
+    border-radius: 20px;
+    font-size: 10px;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
 }
