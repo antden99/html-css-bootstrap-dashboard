@@ -18,6 +18,7 @@
 
 .col-1 {
     background-color: var(--secondary);
+   
 }
 
 .col-11 {
@@ -26,10 +27,10 @@
 
 
 .row {
-    height: calc(100vh - 200px)
+    height: calc(100vh - 176px);
 }
 
-nav {
+.nav_2 {
     background-color: var(--primary);
     height: 100px;
 }
@@ -100,8 +101,29 @@ ul {
     background-color: var(--btn-color);
     padding: 2px 6px;
     border-radius: 20px;
-    font-size: 10px;
+    font-size: 8px;
     color: white;
     text-decoration: none;
     display: inline-block;
+}
+
+.done{
+    background-color: green;
+    border-radius: 10px;
+    padding: 1px 4px;
+    color: white;
+}
+
+.failed{
+    background-color: red;
+    border-radius: 10px;
+    padding: 1px 4px;
+    color: white;
+}
+
+.process{
+    background-color: rgb(212, 162, 69);
+    border-radius: 10px;
+    padding: 1px 4px;
+    color: white;
 }
