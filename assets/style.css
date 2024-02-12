@@ -14,11 +14,9 @@
     height: 100vh;
 }
 
-#site_header {}
 
 .col-1 {
     background-color: var(--secondary);
-
 }
 
 .col-11 {
@@ -27,7 +25,7 @@
 
 
 .row {
-    height: 100vh;
+    height: calc((100vh - 100px));
 }
 
 nav {
@@ -46,7 +44,7 @@ nav {
 }
 
 .card {
-   
+
     background-color: white;
 }
 
@@ -58,25 +56,37 @@ ul {
     flex-grow: 1;
 
 
-   & form {
+    & form {
         border: 1px solid;
         border-radius: 5px;
-        & input{
+
+        & input {
             width: 90%;
         }
     }
 
-    }
-
-
-
-.space{
-    justify-content: space-around;
 }
 
 
-@media screen and ( max-width:768px){
-    .item_2{
+
+.space {
+    justify-content: space-around;
+}
+
+.item_1 {
+    display: none;
+}
+
+@media screen and (max-width:768px) {
+    .item_2 {
         display: none;
     }
+
+    .item_1 {
+        display: block;
+    }
+}
+
+.container-fluid{
+   
 }
