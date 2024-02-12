@@ -1,5 +1,56 @@
-:root{
-    --lighter:#e5e5e5;
-    --primary:#1b72e8;
-    --secondary:#12293f;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+
+:root {
+    --lighter: #e5e5e5;
+    --primary: #1b72e8;
+    --secondary: #12293f;
+}
+
+.wrapper {
+    height: 100vh;
+}
+
+#site_header {
+    height: 100px;
+    background-color: red;
+}
+
+.col-1 {
+    background-color: var(--secondary);
+    
+}
+
+.col-11 {
+    background-color: var(--lighter);
+}
+
+
+.row{
+    height: 100vh;
+}
+
+nav{
+    height: 100px;
+    background-color: green;
+}
+
+.col-12{
+    background-color: pink;
+    height: 600px;
+}
+
+.col-md-4{
+    background-color: black;
+    height: 600px;
+}
+
+.card
+{
+    height: 100%;
+    background-color: white;
+}
+
