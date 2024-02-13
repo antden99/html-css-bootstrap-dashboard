@@ -75,11 +75,14 @@ ul {
     justify-content: space-around;
 }
 
-.item_1 {
+.ghost{
     display: none;
-    
 }
-
+@media screen and (min-width:768px){
+    .ghost{
+        display: table-cell;
+    }
+}
 @media screen and (max-width:768px) {
     .item_2 {
         display: none;
@@ -126,4 +129,8 @@ ul {
     border-radius: 10px;
     padding: 1px 4px;
     color: white;
+}
+
+table{
+    font-size: 12px;
 }
