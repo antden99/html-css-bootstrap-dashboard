@@ -8,23 +8,21 @@
     --lighter: #e5e5e5;
     --primary: #1b72e8;
     --secondary: #12293f;
-    --btn-color:#165bba;
+    --btn-color: #165bba;
 }
 
 .wrapper {
     height: 100vh;
 }
 
-
 .col-1 {
     background-color: var(--secondary);
-   
+
 }
 
 .col-11 {
     background-color: var(--lighter);
 }
-
 
 .row {
     height: calc(100vh - 176px);
@@ -35,19 +33,9 @@
     height: 100px;
 }
 
-.col-12 {
-    background-color: pink;
-
-}
-
-.col-md-4 {
-    background-color: black;
-
-}
-
 .card {
-
     background-color: white;
+    margin-top: 15px;
 }
 
 ul {
@@ -69,19 +57,21 @@ ul {
 
 }
 
-
-
 .space {
     justify-content: space-around;
 }
 
-.ghost{
+.ghost {
     display: none;
 }
-@media screen and (min-width:768px){
-    .ghost{
+
+@media screen and (min-width:768px) {
+    .ghost {
         display: table-cell;
     }
+}
+.item_1 {
+    display: none;
 }
 @media screen and (max-width:768px) {
     .item_2 {
@@ -93,14 +83,14 @@ ul {
     }
 }
 
-.plus{
+.plus {
     font-size: 20px;
     padding: 10px;
     border: 1px solid white;
     border-radius: 5px;
 }
 
-.bt{
+.bt {
     background-color: var(--btn-color);
     padding: 2px 6px;
     border-radius: 20px;
@@ -110,27 +100,27 @@ ul {
     display: inline-block;
 }
 
-.done{
+.done {
     background-color: green;
     border-radius: 10px;
     padding: 1px 4px;
     color: white;
 }
 
-.failed{
+.failed {
     background-color: red;
     border-radius: 10px;
     padding: 1px 4px;
     color: white;
 }
 
-.process{
+.process {
     background-color: rgb(212, 162, 69);
     border-radius: 10px;
     padding: 1px 4px;
     color: white;
 }
 
-table{
+.card{
     font-size: 12px;
 }
