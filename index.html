@@ -47,6 +47,7 @@
                                         <li><a class="dropdown-item" href="#">Fatturazione</a></li>
                                         <li><a class="dropdown-item" href="#">Logout</a></li>
                                     </ul>
+
                                 </div>
                             </li>
                         </ul>
@@ -56,7 +57,9 @@
             </div>
         </header>
 
+        <aside>
 
+        </aside>
         <main id="site_main">
 
             <div class="container-fluid ">
@@ -76,7 +79,7 @@
                             <div class="item_2">Signals</div>
 
                         </div>
-                        <div class="d-flex  align-items-center space ">
+                        <div class="d-flex  align-items-center space under  ">
                             <div><i class="fa-solid fa-gear p-2 "></i></div>
                             <div class="item_2 ">Admin</div>
 
@@ -96,7 +99,6 @@
                                                     blaze</a>
                                             </div>
                                         </div>
-
                                         <div>
                                             <a href="" class="text-white bt">3 app</a>
                                             <i class="fa-solid fa-angles-right"></i>
@@ -110,21 +112,122 @@
                                                     app</a></span>
                                         </div>
                                     </div>
-
-                                    <div class="col-4 d-flex flex-column align-items-end align-items-center">Studenti
+                                    <div class="col-4 d-flex flex-column align-items-end align-items-center ">Studenti
                                         online ultimi 30 minuti
                                         <div>
                                             <h3>125</h3>
                                         </div>
                                     </div>
-
                                     <div class="col-4 d-flex justify-content-end  gap-3">
                                         <div>Nuovo studente</div>
-                                        <div><a href="" class="text-white"><i class="fa-solid fa-plus plus"></i></a>
+                                        <div>
+                                            <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                                                data-bs-target="#offcanvasScrolling"
+                                                aria-controls="offcanvasScrolling"><i
+                                                    class="fa-solid fa-plus plus"></i></button>
+
+                                        </div>
+                                        <div>
+
+                                            <div class="offcanvas offcanvas-end w-50 col-sm-w-100" data-bs-scroll="true"
+                                                data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling"
+                                                aria-labelledby="offcanvasScrollingLabel">
+                                                <div class="offcanvas-header">
+                                                    <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Inserisci
+                                                        un nuovo studente</h5>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                                        aria-label="Close"></button>
+                                                </div>
+
+                                                <div class="offcanvas-body ">
+                                                    <div class="mb-3">
+                                                        <div class="d-flex gap-4">
+                                                            <div class="w-50">
+                                                                <label class="form-label">Nome</label>
+                                                                <input type="text" class="form-control" id="name">
+                                                            </div>
+                                                            <div class="w-50">
+                                                                <label class="form-label">Cognome</label>
+                                                                <input type="text" class="form-control" id="surname">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="mb-3">
+                                                        <div class="d-flex gap-4">
+                                                            <div class="w-50">
+                                                                <label class="form-label">Email</label>
+                                                                <div class="input-group flex-nowrap">
+                                                                    <span class="input-group-text"
+                                                                        id="addon-wrapping">@</span>
+                                                                    <input type="email" class="form-control"
+                                                                        aria-label="Username"
+                                                                        aria-describedby="addon-wrapping" id="email">
+                                                                </div>
+                                                            </div>
+                                                            <div class="w-50">
+                                                                <label class="form-label">Password</label>
+                                                                <input type="password" id="password"
+                                                                    class="form-control">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="mb-3">
+                                                        <label class="form-label">Indirizzo</label>
+                                                        <input type="text" class="form-control" id="address">
+                                                    </div>
+
+                                                    <div class="mb-3">
+                                                        <div class="d-flex gap-4">
+                                                            <div>
+                                                                <label class="form-label">Città</label>
+                                                                <input type="text" class="form-control" id="town">
+                                                            </div>
+
+                                                            <div class="w-50">
+                                                                <label class="form-label">Stato</label>
+                                                                <select class="form-select"
+                                                                    aria-label="Default select example" id="state">
+                                                                    <option selected>Scegli...</option>
+                                                                    <option value="1">Italia</option>
+                                                                    <option value="2">America</option>
+                                                                    <option value="3">Inghilterra</option>
+                                                                </select>
+                                                            </div>
+
+                                                            <div>
+                                                                <label class="form-label">CAP</label>
+                                                                <input type="text" class="form-control" id="cap">
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="mb-3">
+                                                        <label class="form-label">Foto</label>
+                                                        <input class="form-control" type="file" id="filefoto">
+                                                    </div>
+
+                                                    <div class="mb-3">
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" value=""
+                                                                id="flexCheckDefault">
+                                                            <label class="form-check-label">Seleziona per
+                                                                proseguire</label>
+                                                        </div>
+                                                    </div>
+
+                                                    <button type="button" class="btn btn-primary">Salva</button>
+                                                    <button type="button" class="btn btn-warning">Svuota</button>
+                                                </div>
+
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
+
                         </div>
                         <div class="container-fluid ">
                             <div class="row">
@@ -298,15 +401,7 @@
                                                 <div id="collapseOne" class="accordion-collapse collapse show"
                                                     data-bs-parent="#accordionExample">
                                                     <div class="accordion-body">
-                                                        <strong>This is the first item's accordion body.</strong> It is
-                                                        shown by default, until the collapse plugin adds the appropriate
-                                                        classes that we use to style each element. These classes control
-                                                        the overall appearance, as well as the showing and hiding via
-                                                        CSS transitions. You can modify any of this with custom CSS or
-                                                        overriding our default variables. It's also worth noting that
-                                                        just about any HTML can go within the
-                                                        <code>.accordion-body</code>, though the transition does limit
-                                                        overflow.
+                                                        Clicca sul + in alto, nella sezione blu.
                                                     </div>
                                                 </div>
                                             </div>
@@ -323,15 +418,7 @@
                                                 <div id="collapseTwo" class="accordion-collapse collapse"
                                                     data-bs-parent="#accordionExample">
                                                     <div class="accordion-body">
-                                                        <strong>This is the second item's accordion body.</strong> It is
-                                                        hidden by default, until the collapse plugin adds the
-                                                        appropriate classes that we use to style each element. These
-                                                        classes control the overall appearance, as well as the showing
-                                                        and hiding via CSS transitions. You can modify any of this with
-                                                        custom CSS or overriding our default variables. It's also worth
-                                                        noting that just about any HTML can go within the
-                                                        <code>.accordion-body</code>, though the transition does limit
-                                                        overflow.
+                                                        Clicca sulla campanella
                                                     </div>
                                                 </div>
                                             </div>
@@ -347,15 +434,7 @@
                                                 <div id="collapseThree" class="accordion-collapse collapse"
                                                     data-bs-parent="#accordionExample">
                                                     <div class="accordion-body">
-                                                        <strong>This is the third item's accordion body.</strong> It is
-                                                        hidden by default, until the collapse plugin adds the
-                                                        appropriate classes that we use to style each element. These
-                                                        classes control the overall appearance, as well as the showing
-                                                        and hiding via CSS transitions. You can modify any of this with
-                                                        custom CSS or overriding our default variables. It's also worth
-                                                        noting that just about any HTML can go within the
-                                                        <code>.accordion-body</code>, though the transition does limit
-                                                        overflow.
+                                                        Scorri sui pulsanti della NavBar laterale.
                                                     </div>
                                                 </div>
                                             </div>
@@ -369,30 +448,28 @@
                                         </div>
                                         <div class="p-3 ">
                                             <div class="card  m-0 ">
-                                                <div class="form-check text-start border-bottom ">
-                                                    <input class="form-check-input " type="checkbox" value=""
-                                                        id="flexCheckDefault">
-                                                    <label class="form-check-label " for="flexCheckDefault">
-                                                        <div class="fw-medium">Kockoff nuove classi</div>
-                                                    </label>
-
-                                                </div>
-                                                <div class="form-check text-start border-bottom">
-                                                    <input class="form-check-input" type="checkbox" value=""
-                                                        id="flexCheckChecked" checked>
-                                                    <label class="form-check-label" for="flexCheckChecked">
-                                                        <div class="fw-medium">Lezione su Bootastrap 5 in classe #75
-                                                        </div>
-                                                    </label>
-                                                </div>
-                                                <div class="form-check text-start">
-                                                    <input class="form-check-input" type="checkbox" value=""
-                                                        id="flexCheckChecked" checked>
-                                                    <label class="form-check-label" for="flexCheckChecked">
-                                                        <div class="fw-medium">Controllare username github studenti
-                                                        </div>
-                                                    </label>
-                                                </div>
+                                                <ul class="list-group">
+                                                    <li class="list-group-item">
+                                                        <input class="form-check-input me-1" type="checkbox" value=""
+                                                            id="firstCheckbox">
+                                                        <label class="form-check-label fw-medium"
+                                                            for="firstCheckbox">Kickoff nuove classi</label>
+                                                    </li>
+                                                    <li class="list-group-item">
+                                                        <input class="form-check-input me-1" type="checkbox" value=""
+                                                            id="secondCheckbox">
+                                                        <label class="form-check-label fw-medium"
+                                                            for="secondCheckbox">Lezione su Bootstrap 5 in classe
+                                                            #75</label>
+                                                    </li>
+                                                    <li class="list-group-item">
+                                                        <input class="form-check-input me-1" type="checkbox" value=""
+                                                            id="thirdCheckbox">
+                                                        <label class="form-check-label fw-medium"
+                                                            for="thirdCheckbox">Controllare username github
+                                                            studenti</label>
+                                                    </li>
+                                                </ul>
                                             </div>
                                         </div>
                                     </div>

@@ -58,11 +58,16 @@ ul {
     }
 
 }
-
-.space {
+.under{
+    margin-top: auto;
+    margin-bottom: 150px;
+}
+.space{
     justify-content: space-around;
 }
-
+.space:hover{
+    background-color:  rgb(194, 192, 192);
+}
 .ghost {
     display: none;
 }
@@ -84,6 +89,15 @@ ul {
 
     .item_1 {
         display: inline-block;
+    }
+    .first{
+        order: 2;
+    }
+    .second{
+        order: 3;
+    }
+    .third{
+        order:1;
     }
 }
 
