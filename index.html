@@ -22,17 +22,17 @@
         <header id="site_header">
 
             <div class="container-fluid">
-                <nav class="navbar bg-body-tertiary d-flex gap-3">
+                <nav class="navbar bg-body-tertiary d-flex gap-3 ">
                     <div class="item_1"><img src="./assets/img/mobile-logo.png" alt="" width="50px"></div>
                     <div class="item_2"><img src="./assets/img/logo.svg" alt=""></div>
                     <div class="search">
-                        <form action="#" method="post" class="p-2">
+                        <form action="#" method="post" class="p-2 ">
                             <i class="fa-solid fa-magnifying-glass"></i>
-                            <input type="text" placeholder="Prova a cercare:lezioni di Laravel" class="border-0 ">
+                            <input type="text" placeholder="Prova a cercare:lezioni di Laravel" class="border-0">
                         </form>
                     </div>
                     <div>
-                        <ul class="d-flex gap-3 fs-4 pt-2">
+                        <ul class="d-flex gap-3 fs-4 m-0 p-0">
                             <li class="item_2"><a href=""><i class="fa-solid fa-list"></i></a></li>
                             <li class="item_2"> <a href=""><i class="fa-solid fa-question"></i></a></li>
                             <li class="item_2"><a href=""><i class="fa-solid fa-ellipsis-vertical"></i></a></li>
@@ -57,9 +57,6 @@
             </div>
         </header>
 
-        <aside>
-
-        </aside>
         <main id="site_main">
 
             <div class="container-fluid ">
@@ -121,7 +118,9 @@
                                     <div class="col-4 d-flex justify-content-end  gap-3">
                                         <div>Nuovo studente</div>
                                         <div>
-                                            <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                                            <button class="btn btn-primary"
+                                                style="--bs-btn-padding-y: rem; --bs-btn-padding-x: .rem; --bs-btn-font-size: .7rem;"
+                                                type="button" data-bs-toggle="offcanvas"
                                                 data-bs-target="#offcanvasScrolling"
                                                 aria-controls="offcanvasScrolling"><i
                                                     class="fa-solid fa-plus plus"></i></button>
@@ -236,25 +235,24 @@
                                         <div style="background-color: rgb(218, 218, 218)" class="title border p-2 ">
                                             <h3>Prossime classi</h3>
                                         </div>
-                                        <table class="table text-center">
+                                        <table class="table ">
 
                                             <tbody>
                                                 <tr>
                                                     <td>Nome</td>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td></td>
+
+
+
                                                     <td class="ghost">Data inizio</td>
                                                     <td class="ghost">ROI</td>
                                                     <td>Stato</td>
                                                     <td>Azioni</td>
                                                 </tr>
                                                 <tr>
-                                                    <th><img src="./assets/img/class-avatar.jpg" alt="" width="25px">
+                                                    <th class=""><img src="./assets/img/class-avatar.jpg" alt=""
+                                                            width="25px">
                                                         Classe 75</th>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td></td>
+
                                                     <td class="ghost">15 Feb 2021</td>
                                                     <td class="ghost">20%</td>
                                                     <td><span class="done">done</span></td>
@@ -266,12 +264,11 @@
                                                                 class="fa-solid fa-trash"></i></button></td>
                                                 </tr>
                                                 <tr>
-                                                    <th><img src="./assets/img/class-avatar.jpg" alt="" width="25px">
+                                                    <th class="w_40"><img src="./assets/img/class-avatar.jpg" alt=""
+                                                            width="25px">
                                                         Classe 76</th>
 
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td></td>
+
                                                     <td class="ghost">16 Feb 2021</td>
                                                     <td class="ghost">20%</td>
                                                     <td><span class="done">done</span></td>
@@ -286,9 +283,7 @@
                                                 <tr>
                                                     <th><img src="./assets/img/class-avatar.jpg" alt="" width="25px">
                                                         Classe 77</th>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td></td>
+
                                                     <td class="ghost">17 Feb 2021</td>
                                                     <td class="ghost">20%</td>
                                                     <td><span class="process">process</span></td>
@@ -302,9 +297,7 @@
                                                 <tr>
                                                     <th><img src="./assets/img/class-avatar.jpg" alt="" width="25px">
                                                         Classe 78</th>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td></td>
+
                                                     <td class="ghost">18 Feb 2021</td>
                                                     <td class="ghost">20%</td>
                                                     <td><span class="done">done</span></td>
@@ -318,9 +311,7 @@
                                                 <tr>
                                                     <th><img src="./assets/img/class-avatar.jpg" alt="" width="25px">
                                                         Classe 79</th>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td></td>
+
                                                     <td class="ghost">19 Feb 2021</td>
                                                     <td class="ghost">20%</td>
                                                     <td><span class="failed">failed</span></td>
@@ -334,9 +325,7 @@
                                                 <tr>
                                                     <th><img src="./assets/img/class-avatar.jpg" alt="" width="25px">
                                                         Classe 80</th>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td></td>
+
                                                     <td class="ghost">20 Feb 2021</td>
                                                     <td class="ghost">20%</td>
                                                     <td><span class="done">done</span></td>
@@ -350,9 +339,7 @@
                                                 <tr>
                                                     <th><img src="./assets/img/class-avatar.jpg" alt="" width="25px">
                                                         Classe 81</th>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td></td>
+
                                                     <td class="ghost">21 Feb 2021</td>
                                                     <td class="ghost">20%</td>
                                                     <td><span class="failed">failed</span></td>
@@ -366,9 +353,7 @@
                                                 <tr>
                                                     <th><img src="./assets/img/class-avatar.jpg" alt="" width="25px">
                                                         Classe 82</th>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td></td>
+
                                                     <td class="ghost">22 Feb 2021</td>
                                                     <td class="ghost">20%</td>
                                                     <td><span class="done">done</span></td>
